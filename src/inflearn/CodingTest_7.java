@@ -1,7 +1,6 @@
-package inflean;
+package inflearn;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class CodingTest_7 {
     public static void main(String[] args) {

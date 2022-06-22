@@ -1,4 +1,4 @@
-package inflean;
+package inflearn;
 
 import java.util.Arrays;
 import java.util.HashMap;

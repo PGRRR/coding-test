@@ -1,4 +1,4 @@
-package inflean;
+package inflearn;
 
 public class CodingTest_2 {
     public static void main(String[] args) {

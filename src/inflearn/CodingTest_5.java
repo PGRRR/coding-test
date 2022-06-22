@@ -1,6 +1,4 @@
-package inflean;
-
-import java.util.Arrays;
+package inflearn;
 
 public class CodingTest_5 {
     public static void main(String[] args) {
