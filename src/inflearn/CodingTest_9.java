@@ -1,4 +1,4 @@
-package inflean;
+package inflearn;
 
 public class CodingTest_9 {
 

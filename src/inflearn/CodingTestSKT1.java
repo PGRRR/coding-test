@@ -1,6 +1,5 @@
-package inflean;
+package inflearn;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class CodingTestSKT1 {
