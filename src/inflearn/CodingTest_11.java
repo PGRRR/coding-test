@@ -1,36 +1,28 @@
-package inflearn;
+package inflean;
 
 public class CodingTest_11 {
-    static int[][] ints = {
-            {1,0,1,0,1,0},
-            {1,1,1,1,1,1},
-            {0,0,0,0,0,1},
-            {1,1,1,1,1,1},
-            {1,1,1,1,1,1}
-    };
-    static int n = 5;
-    static int m = 6;
     public static void main(String[] args) {
-        int result = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (dfs(i, j)) {
 
+        int[] arr = {19, 15, 10, 17};
+        int start = 0;
+        int end = (int) 1e9;
+        int result = 0;
+
+        while (start <= end) {
+            long total = 0;
+            int mid = (start + end) / 2;
+            for (int i = 0; i < 4; i++) {
+                if (arr[i] > mid) {
+                    total += arr[i] - mid;
                 }
             }
+            if (total < 6) {
+                end = mid - 1;
+            } else {
+                result = mid;
+                start = mid + 1;
+            }
         }
-    }
-    public static boolean dfs(int x, int y) {
-        if (x <= -1 || x > n || y >= m || y <= -1) {
-            return false;
-        }
-        if (ints[x][y] == 1) {
-            ints[x][y] += 1;
-            dfs(x - 1, y);
-            dfs(x, y - 1);
-            dfs(x + 1, y);
-            dfs(x, y + 1);
-        }
-        return true;
+        System.out.println(result);
     }
 }
